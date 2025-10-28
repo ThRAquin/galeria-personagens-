@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Personagens - Anos 90/2000</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="titulo-principal">🎭 Galeria de Personagens Clássicos</h1>
+            <p class="subtitulo">Desenhos que marcaram os anos 90 e 2000</p>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Barra de busca -->
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="🔍 Buscar personagem..."
+                    class="search-input"
+                >
+                <button id="searchButton" class="search-button">Buscar</button>
+            </div>
+
+            <!-- Loading -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Carregando personagens...</p>
+            </div>
+
+            <!-- Container dos Cards -->
+            <div id="cardsContainer" class="cards-container">
+                <!-- Os cards serão inseridos aqui via JavaScript -->
+            </div>
+
+            <!-- Mensagem de erro -->
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <p>❌ Erro ao carregar os personagens. Tente novamente!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 - Projeto Acadêmico | Desenvolvido com ❤️</p>
+            <p>API utilizada: <a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
